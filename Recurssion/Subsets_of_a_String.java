@@ -32,3 +32,26 @@ public class Solution {
       subs(ans, ip, op2);
     }
 }
+
+// ===================================================================================================================================================================
+
+// import java.util.*;
+// public class Solution {
+
+//     public static List<String> findSubstrings(String s) {
+//       Set<String> ans = new TreeSet<>();
+
+//       subs(ans, 0, s, "");
+//       return new ArrayList<>(ans);
+//     }
+
+//     public static void subs(Set<String> ans, int ind, String ip, String op){
+//       if(ind == ip.length()){
+//         ans.add(op);
+//         return;
+//       }
+
+//       subs(ans, ind + 1, ip, op);
+//       subs(ans, ind + 1, ip, op + ip.charAt(ind));
+//     }
+// }
