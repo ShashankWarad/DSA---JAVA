@@ -25,3 +25,25 @@ public class Solution {
       return counts(text, word, index+1, ans);
     }
 }
+
+
+// ========================================================================================================================================================================
+
+// OPTIMAL SOLUTION WITH indexOf function 
+
+
+//     public class Solution {
+//     public static int count(String text, String word) {
+//         if (text == null || word == null || word.isEmpty()) return 0;
+
+//         int count = 0;
+//         int index = 0;
+
+//         while ((index = text.indexOf(word, index)) != -1) {
+//             count++;
+//             index++;
+//         }
+
+//         return count;
+//     }
+// }
